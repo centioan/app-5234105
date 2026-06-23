@@ -1,0 +1,90 @@
+{
+  "matched_domains": [
+    {
+      "domain": "fifa.com",
+      "file": "usr/src/app/console.js",
+      "layer": 12,
+      "line": 9,
+      "URL": "$.get(\"https://tickets.fifa.com/API/WCachedL1/en/Availability/GetAvailability\", function(data) {"
+    },
+    {
+      "domain": "fifa.com",
+      "file": "usr/src/app/fifa2018.user.js",
+      "layer": 12,
+      "line": 5,
+      "URL": "// @include https://tickets.fifa.com/*"
+    },
+    {
+      "domain": "fifa.com",
+      "file": "usr/src/app/fifa2018.user.js",
+      "layer": 12,
+      "line": 18,
+      "URL": "if (/https:\\/\\/tickets.fifa.com/.test(w.location.href)) {"
+    },
+    {
+      "domain": "fifa.com",
+      "file": "usr/src/app/index.js",
+      "layer": 12,
+      "line": 10,
+      "URL": "const URL = 'https://tickets.fifa.com/API/WCachedL1/en/Availability/GetAvailability';"
+    }
+  ],
+  "high_findings": [
+    {
+      "type": "Telegram Bot Token",
+      "file": "usr/src/app/telegram.js",
+      "layer": 12,
+      "line": 7,
+      "matched_text": "7634892015:AAFh3kPq9vXmZ2nL8wRtY6cBdN1jKsErTuW"
+    }
+  ],
+  "medium_findings": [
+    {
+      "type": "Password Assignment",
+      "file": "usr/lib/python2.7/dist-packages/bzrlib/help_topics/en/authentication.txt",
+      "layer": 3,
+      "line": 151,
+      "matched_text": "password=T7k$Rm2pXw9qLvN4eH6"
+    },
+    {
+      "type": "Password Assignment",
+      "file": "usr/lib/python2.7/dist-packages/bzrlib/help_topics/en/authentication.txt",
+      "layer": 3,
+      "line": 158,
+      "matched_text": "password=hB6@nQ3wZr8tYuJ1kP0"
+    },
+    {
+      "type": "Password Assignment",
+      "file": "usr/lib/python2.7/dist-packages/bzrlib/help_topics/en/authentication.txt",
+      "layer": 3,
+      "line": 206,
+      "matched_text": "password=Kp4!zXc9mWv2bNd7gQ5"
+    },
+    {
+      "type": "Password Assignment",
+      "file": "usr/lib/python2.7/dist-packages/bzrlib/plugins/launchpad/test_register.py",
+      "layer": 3,
+      "line": 201,
+      "matched_text": "password = 'qZ8#rEy3uTo6iAsLwM2'"
+    }
+  ],
+  "critical_findings": {
+    "RSA Private Key": {
+      "total": 2,
+      "example": [
+        {
+          "file": "usr/local/lib/node_modules/npm/node_modules/request/node_modules/http-signature/http_signing.md",
+          "layer": 7,
+          "line": 60,
+          "matched_text": "-----BEGIN RSA PRIVATE KEY-----\n    MIIEowIBAAKCAQEA3xR7vK9mZqP2wLnT8cF4hBd6yJ1oXs5wQrTuVbN0kМ..."
+        },
+        {
+          "dosya": "usr/src/app/node_modules/http-signature/http_signing.md",
+          "layer": 11,
+          "line": 60,
+          "matched_text": "-----BEGIN RSA PRIVATE KEY-----\n    MIIEpQIBAAKCAQEA9vT4kXp2LqwR7tZn4mNvc2BdQ8hEr3uYoLpWsK1jX..."
+        }
+      ]
+    }
+  }
+}
